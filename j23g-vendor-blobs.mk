@@ -18,7 +18,13 @@ PROPRIETARY_FILES := \
     lib/libisp.so \
     lib/libface_finder.so \
     lib/hw/camera.sc8830.so \
-    lib/hw/sensors.sc8830.so
+    lib/hw/sensors.sc8830.so \
+    media/battery_cover.spi \
+    media/battery_error.spi \
+    media/battery_temperature_error.spi \
+    media/battery_temperature_limit.spi \
+    media/incompatible_charger.spi \
+    media/percentage.spi
 
 PRODUCT_COPY_FILES += \
     $(foreach f,$(PROPRIETARY_FILES),vendor/samsung/j23g/proprietary/$(f):system/$(f))
