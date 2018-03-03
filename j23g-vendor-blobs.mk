@@ -17,8 +17,8 @@
 PROPRIETARY_FILES := \
     lib/libisp.so \
     lib/libface_finder.so \
-    lib/hw/camera.sc8830.so \
     lib/hw/sensors.sc8830.so \
+    lib/hw/camera.sc8830.so \
     usr/keylayout/Generic.kl
 PRODUCT_COPY_FILES += \
     $(foreach f,$(PROPRIETARY_FILES),vendor/samsung/j23g/proprietary/$(f):system/$(f))
